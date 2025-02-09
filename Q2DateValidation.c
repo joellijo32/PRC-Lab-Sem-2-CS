@@ -1,4 +1,9 @@
 #include <stdio.h>
+int isLeapYear(int y)
+{
+    return (y%400 == 0 || (y%100 != 0 && y%4 == 0));
+}
+
 void main()
 {
     char string[10];
@@ -7,32 +12,28 @@ void main()
     int day = (string[0]- '0')*10 + (string[1]-'0');
     int month = (string[3]- '0')*10 + (string[4]-'0');
     int year = (string[6]- '0')*1000 + (string[7]-'0')*100 + (string[8]-'0')*10 + (string[9] -'0') ;
+    int validity = 1;
+    if(year < 1 || month < 1 || month > 12 || day < 1 || day > 31)  validity = 0;
 
-    if(day < 1 || month < 1 || month > 12 || year < 0 )
+   
+    switch(month)
     {
-        printf("Invalid Date");
-        return;
-    }
-
-    int list[] = { 31, 28, 31, 30,31,30,31,31,30,31,30,31};
-    if(year%400 == 0 || (year%4 == 0 && year%100 != 0))
-    {
-        list[1]= 29;
-        if(month == 2 && day > 29)
+        case 4: case 6: case 9: case 11:
+        if(day > 30) validity = 0;
+        break;
+        
+        case 2:
+        if(isLeapYear(year)) 
         {
-            
-            printf("Invalid Date");
-            return;
+            if(day > 29) validity =  0;
         }
-    }
-    
-    
-    if(day > list[month-1]){
-        printf("Invalid Date");
-        return;
-    }
-    
-    printf("Valid Date ");
+        else if(day > 28) validity = 0;
+        break;
 
+        default:  validity = 1;
+    }
+
+    if(validity) printf("Valid Date");
+    else printf("Invalid Date");
     
 }
