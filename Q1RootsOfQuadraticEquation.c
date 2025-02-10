@@ -1,3 +1,6 @@
+//Experiment No. 1
+//Roots of a quadratic equation
+//Created by Joel Lijo
 #include <stdio.h>
 #include <math.h>
 void main()

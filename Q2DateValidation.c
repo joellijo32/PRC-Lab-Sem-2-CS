@@ -1,3 +1,6 @@
+//Expermient No. 2
+//Date Validation
+//Created by Joel Lijo
 #include <stdio.h>
 int isLeapYear(int y)
 {
@@ -6,12 +9,9 @@ int isLeapYear(int y)
 
 void main()
 {
-    char string[10];
     printf("Enter the Date (format: dd/mm/yyyy): ");
-    scanf("%s", &string);
-    int day = (string[0]- '0')*10 + (string[1]-'0');
-    int month = (string[3]- '0')*10 + (string[4]-'0');
-    int year = (string[6]- '0')*1000 + (string[7]-'0')*100 + (string[8]-'0')*10 + (string[9] -'0') ;
+    int day, month,year;
+    scanf("%d/%d/%d",&day,&month,&year);
     int validity = 1;
     if(year < 1 || month < 1 || month > 12 || day < 1 || day > 31)  validity = 0;
 
