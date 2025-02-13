@@ -21,3 +21,5 @@ suitable message.
 12. Given two sets (mathematical set) of numbers A and B. Find A U B, A ∩B, A-B.
 13.Given two sorted list of numbers. Merge these two lists to form a new list such that the
 resultant list is also in sorted order. (do the operation without further sorting).
+
+Cycle 1 Completed . Cycle 2 progressing
