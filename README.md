@@ -22,4 +22,4 @@ suitable message.
 13.Given two sorted list of numbers. Merge these two lists to form a new list such that the
 resultant list is also in sorted order. (do the operation without further sorting).
 
-Cycle 1 Completed . Cycle 2 progressing
+Cycle 1 Completed . Cycle 2 completed. Cycle 3 progressing......
