@@ -1,17 +1,17 @@
 #include <stdio.h>
 
-int main() {
+void main() {
     int n, m;
     printf("Enter number of elements in set A: ");
     scanf("%d", &n);
     if(n < 0)
     {
         printf("Invalid Input. Negative number Entered.");
-        return;
+        return ;
     }
 
     int A[n];
-    printf("Enter elements of set A: ");
+    printf("Enter elements of set A: \n");
     for (int i = 0; i < n; i++) {
         scanf("%d", &A[i]);
     }
@@ -20,7 +20,7 @@ int main() {
         for (int j = i + 1; j < n; j++) {
             if (A[i] == A[j]) {
                 printf("Error: Set A contains duplicate elements.\n");
-                return 1;
+                return ;
             }
         }
     }
@@ -36,7 +36,7 @@ int main() {
         return;
     }
     int B[m];
-    printf("Enter elements of set B: ");
+    printf("Enter elements of set B: \n");
     for (int i = 0; i < m; i++) {
         scanf("%d", &B[i]);
     }
@@ -44,7 +44,7 @@ int main() {
         for (int j = i + 1; j < m; j++) {
             if (B[i] == B[j]) {
                 printf("Error: Set B contains duplicate elements.\n");
-                return 1;
+                return ;
             }
         }
     }
@@ -90,5 +90,5 @@ int main() {
         }
     }
     printf("}\n");
-    return 0;
+    return ;
 }
