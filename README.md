@@ -1,3 +1,5 @@
+(please ignore the .exe file inside the folder, bruh)
+
 S2 PRC LAB CYCLE 1 (KTU 2024 Scheme): 
 
 
