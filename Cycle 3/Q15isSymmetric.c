@@ -5,12 +5,22 @@
 int main(){
     printf("Enter size: "); int n;
     scanf("%d", &n);
+    if(n <= 0){
+        printf("Invalid Input"); return 1;
+    }
     int array[n][n];
     printf("Enter the elements: \n");
     for(int i = 0; i < n;i++){
         for(int j = 0;j < n;j++){
             scanf("%d", &array[i][j]);
         }
+    }
+    printf("\nArray Entered: \n");
+    for(int i = 0; i < n;i++){
+        for(int j = 0; j < n;j++){
+            printf("%d ", array[i][j]);
+        }
+        printf("\n");
     }
     
     int isSymmetric = 1;
@@ -22,7 +32,7 @@ int main(){
             }
         }
     }
-
+    printf("\n");
     if(isSymmetric){
         printf("The array is Symmetric");
     }else{
@@ -34,6 +44,6 @@ int main(){
             } printf("\n");
         }
     }
-
+    return 0;
 
 }

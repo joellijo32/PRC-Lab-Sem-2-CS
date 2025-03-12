@@ -5,6 +5,9 @@
 int main(){
     printf("No. of rows = "); int m , n; scanf("%d", &m);
     printf("No. of columns = "); scanf("%d", &n);
+    if(m <= 0 || n <= 0){
+        printf("Invalid Input"); return 1;
+    }
     int array[m][n];
     printf("Enter the elements: \n");
     for(int i = 0; i < m;i++){
@@ -29,5 +32,5 @@ int main(){
         }
     }
 
-    printf("Largest array in the matrix: %d at row: %d and column: %d", largest, row, cols);
+    printf("Largest element array in the matrix: %d, at row: %d and column: %d", largest, row, cols);
 }
