@@ -31,13 +31,11 @@ int main(){
     }
 
     printf("\nPalindrome No.s in the matrix: \n");
-    int count = 0;
     for(int i = 0; i < row; i++){
         for(int j = 0;j < cols;j++){
             if(isPalindrome(array[i][j])){
-                if(count == 0){
+                if(i == 0){
                     printf("%d", array[i][j]);
-                    count = 1;
                 } 
                 else printf(", %d", array[i][j]);
             }
