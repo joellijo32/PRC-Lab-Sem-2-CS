@@ -36,7 +36,7 @@ int main(){
             if(isPalindrome(array[i][j])){
                 if(count == 0){
                     printf("%d", array[i][j]);
-                    count = 1
+                    count = 1;
                 } 
                 else printf(", %d", array[i][j]);
             }
