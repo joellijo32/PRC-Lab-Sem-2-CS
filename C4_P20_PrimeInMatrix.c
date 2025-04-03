@@ -44,5 +44,8 @@ void main(){
 		}
 	}
 	printf("\n");
+if(count ==0){
+printf("No prime numbers present\n");
+}
 
 }
