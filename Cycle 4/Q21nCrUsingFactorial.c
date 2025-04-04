@@ -8,7 +8,7 @@ int factorial(int num){
 int main(){
     printf("n = "); int n, r;scanf("%d", &n);
     printf("r = "); scanf("%d", &r);
-    double nCr = factorial(n) / (factorial(n-r) * factorial(r)); 
+    int nCr = factorial(n) / (factorial(n-r) * factorial(r)); 
     printf("\n%d  \n", n );
-    printf(" C  = %.3lf\n  %d", nCr, r);
+    printf(" C  = %d\n  %d", nCr, r);
 }
