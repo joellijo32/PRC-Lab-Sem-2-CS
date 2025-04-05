@@ -1,3 +1,6 @@
+// Experiment No. 22
+// Palindrome Words
+// Created by Joel Lijo
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -36,14 +39,15 @@ int main()
             word[j] = '\0';
             if (j > 0 && isPalindrome(word))
             {
-                if(count == 0){
+                if (count == 0)
+                {
                     printf("%s", word);
                     count = 1;
                 }
-                else{
+                else
+                {
                     printf(", %s", word);
                 }
-                
             }
             j = 0;
             if (ch == '\0')
@@ -57,8 +61,9 @@ int main()
         i++;
     }
 
-    if(count == 0){
-        printf("No Palindrome words."); 
+    if (count == 0)
+    {
+        printf("No Palindrome words.");
     }
     printf("\n");
     return 0;
