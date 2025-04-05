@@ -58,7 +58,7 @@ int main()
     }
 
     if(count == 0){
-        printf("No Palindrome words.");
+        printf("No Palindrome words."); 
     }
     printf("\n");
     return 0;
