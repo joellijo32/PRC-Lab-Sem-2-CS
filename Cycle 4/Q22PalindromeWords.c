@@ -10,7 +10,7 @@ int isPalindrome(char word[])
     int i, len = strlen(word);
     for (i = 0; i < len / 2; i++)
     {
-        if (word[i] != word[len - 1 - i])
+        if (tolower(word[i]) != tolower(word[len - 1 - i]))
             return 0;
     }
     return 1;
