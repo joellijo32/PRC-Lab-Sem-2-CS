@@ -1,4 +1,5 @@
 (please ignore the .exe file in each folder, bruh)
+Programs in C done for the semester 2 lab during Sem 2 of B.tech  .
 
 Completed Upto Cycle 5 (except Q30)
 
